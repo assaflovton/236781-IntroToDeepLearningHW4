@@ -1,0 +1,33 @@
+name: cs236781-hw4
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  # common
+  - python=3.8.12
+  - ipython
+  - jupyter
+  - jupyterlab
+  - nodejs>=12.0
+  - matplotlib
+  - numpy
+  - scikit-learn
+  - scipy
+  - pytest
+  - pandas
+  - tqdm
+  - graphviz
+  - swig # needed to compile box2d
+  - ffmpeg==4.2.2 # needed for gym video output
+  - pip
+  - pip:
+    - nbmerge
+    - torchviz
+    - gym[atari, accept-rom-license, box2d]==0.21.0
+  # pytorch
+  - pytorch=1.10.0
+  - cudatoolkit
+  - torchvision
+  - torchtext
+
